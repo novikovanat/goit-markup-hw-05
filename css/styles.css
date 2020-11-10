@@ -153,13 +153,39 @@ address {
 .link:focus {
   color: var(--accent-color);
 }
+
 .portfolio-item .link:hover,
 .portfolio-item .link:focus {
   color: inherit;
   display: block;
+  text-decoration: none;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.portfolio-item .link:hover::after,
+.portfolio-item .link:hover::after {
+  content: "Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.";
+  min-width: 200px;
+  width: 100%;
+  color: var(--white);
+  font-size: 18px;
+  line-height: 1.56;
+  background-image: linear-gradient(
+    to right,
+    rgba(33, 150, 243, 0.9),
+    rgba(33, 150, 243, 0.9)
+  );
+  padding-left: 24px;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  position: absolute;
+  top: 0;
+  bottom: 106px;
+  right: 0;
+}
+/* .article {
+  position: relative; */
 
 .link:hover .icon-envelope,
 .link:focus .icon-envelope,
@@ -224,10 +250,7 @@ address {
   display: flex;
   margin-left: auto;
 }
-/* .mail {
-  height: 16px;
-  width: 10px;
-} */
+
 .icon-smartphone {
   height: 16px;
   width: 20px;
@@ -448,6 +471,7 @@ h4.section-title {
 }
 .portfolio-item {
   flex-basis: calc(100% / 3 - 30px);
+  position: relative;
 }
 .portfolio-item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
