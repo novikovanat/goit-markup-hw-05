@@ -731,11 +731,22 @@ h4.section-title {
 }
 .modal {
   position: absolute;
+  left: 50%;
   top: 50%;
-  right: 50%;
   transform: translate(-50%, -50%);
 
   min-width: 528px;
   min-height: 581px;
   background-color: var(--white);
+}
+.modal-button {
+  display: inline-flex;
+  margin-right: 14px;
+  margin-left: 496px;
+  margin-top: 14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
