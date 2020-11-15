@@ -46,7 +46,7 @@
       <div class="main-section">
         <div class="hero">
           <h1 class="section-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="order-button" type="button">Заказать услугу</button>
+          <button class="order-button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </div>
     </section>
@@ -88,13 +88,16 @@
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="list-flex">
           <li class="gallery-item">
-            <img src="./images/box_1.jpg" alt="разработка" width="370" />
+            <img class="image" src="./images/box_1.jpg" alt="разработка" width="370" />
+            <p class="gallery-paragraph">Десктопные приложения</p>
           </li>
           <li class="gallery-item">
             <img src="./images/box_2.jpg" alt="UI" width="370" />
+            <p class="gallery-paragraph">Мобильные приложения</p>
           </li>
           <li class="gallery-item">
             <img src="./images/box_3.jpg" alt="реализация" width="370" />
+            <p class="gallery-paragraph">Дизайнерские решения</p>
           </li>
         </ul>
       </div>
@@ -102,7 +105,7 @@
     <section class="section-team">
       <div class="container">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="list-flex team-list">
+        <ul class="list-flex">
           <li class="team-member">
             <img src="./images/image_1.jpg" alt="Игорь Демьяненко" width="270" />
             <h4 class="section-title">Игорь Демьяненко</h4>
@@ -252,38 +255,38 @@
         <ul class="clients">
           <li class="icon-block">
             <a href="#clients" class="clients-link">
-              <svg class="icon-client">
+              <svg class="icon-client" width="44" height="49" ;>
                 <use href="./images/sprite-main.svg#icon-logo-1">
                 </use>
               </svg></a>
           </li>
           <li class="icon-block">
             <a href="#clients" class="clients-link">
-              <svg class="icon-client">
+              <svg class="icon-client" width="40" height="52">
                 <use href="./images/sprite-main.svg#icon-logo-2"></use>
               </svg></a>
           </li>
           <li class="icon-block">
             <a href="#clients" class="clients-link">
-              <svg class="icon-client">
+              <svg class="icon-client" width="43" height="44">
                 <use href="./images/sprite-main.svg#icon-logo-3"></use>
               </svg></a>
           </li>
           <li class="icon-block">
             <a href="#clients" class="clients-link">
-              <svg class="icon-client">
+              <svg class="icon-client" width="80" height="42">
                 <use href="./images/sprite-main.svg#icon-logo-4"></use>
               </svg></a>
           </li>
           <li class="icon-block">
             <a href="#clients" class="clients-link">
-              <svg class="icon-client">
+              <svg class="icon-client" width="59" height="47">
                 <use href="./images/sprite-main.svg#icon-logo-5"></use>
               </svg></a>
           </li>
           <li class="icon-block">
             <a href="#clients" class="clients-link">
-              <svg class="icon-client">
+              <svg class="icon-client" width="88" height="45">
                 <use href="./images/sprite-main.svg#icon-logo-6"></use>
               </svg></a>
           </li>
@@ -339,6 +342,12 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button data-modal-close></button>
+    </div>
+  </div>
+  <script src="./modal.js"></script>
 </body>
 
 </html>
