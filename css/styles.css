@@ -191,9 +191,13 @@ address {
   align-items: center;
   height: 80px;
 }
+.navigation-box {
+  align-self: flex-end;
+}
 .navigation-menu {
   display: flex;
   margin-left: 93px;
+  margin-bottom: 0;
 }
 .navigation-menu-item:not(:first-child) {
   margin-left: 50px;
@@ -206,7 +210,14 @@ address {
 .navigation-menu-item .current {
   color: var(--accent-color);
 }
-
+.current::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color);
+  margin-top: 28px;
+}
 .header-contacts li + li {
   margin-left: 50px;
 }
