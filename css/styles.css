@@ -251,11 +251,15 @@ p.navigation-menu {
 .width-calc-portfolio:hover .hidden-paragraph {
   transform: translateY(0);
 }
-.positon-relative {
+.positon-relative cover {
   position: relative;
   overflow: hidden;
 }
-
+.cover {
+  display: block;
+  min-width: 360px;
+  min-height: 300px;
+}
 .hidden-paragraph {
   position: absolute;
   top: 0;
