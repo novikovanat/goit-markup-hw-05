@@ -464,10 +464,9 @@ footer .logo {
   margin: 0 0 16px 24px;
   color: var(--white);
 }
-form.display-flex {
+/* .form {
   gap: 24px;
-}
-
+} */
 .backdrop {
   position: fixed;
   top: 0;
