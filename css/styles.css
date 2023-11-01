@@ -413,22 +413,26 @@ footer .logo {
   margin-top: 12px;
 }
 .email-subscribe {
-  font-family: Roboto, sans-serif;
-  display: inline-flex;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  width: 358px;
-  height: 50px;
-  padding: 0 0 0 16px;
-  margin-right: 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--white);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--white);
 }
+.external-link-colors::placeholder {
+  color: var(--white);
+}
+/* .label-item{
+  dsdf
+} */
 
 .email-subscribe:-webkit-autofill,
 .email-subscribe:-webkit-autofill:hover,
@@ -440,7 +444,7 @@ footer .logo {
 .sent-icon {
   fill: var(--white);
   vertical-align: middle;
-  margin-left: 10px;
+  margin-left: 16px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -457,8 +461,11 @@ footer .logo {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 16px;
+  margin: 0 0 16px 24px;
   color: var(--white);
+}
+form.display-flex {
+  gap: 24px;
 }
 
 .backdrop {
@@ -564,6 +571,13 @@ field {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.display-flex .order-button {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-svg {
