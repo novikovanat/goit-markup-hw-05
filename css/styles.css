@@ -251,7 +251,7 @@ p.navigation-menu {
 .width-calc-portfolio:hover .hidden-paragraph {
   transform: translateY(0);
 }
-.positon-relative cover {
+.positon-relative {
   position: relative;
   overflow: hidden;
 }
