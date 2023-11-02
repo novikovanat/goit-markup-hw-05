@@ -1,7 +1,7 @@
 :root {
   --main-text-color: #757575;
   --accent-color: #2196f3;
-  --black: #212121;
+  --black: #2E2F42
   --gray: rgba(255, 255, 255, 0.6);
   --white: #ffffff;
   --dark-background-color: #2f303a;
@@ -508,7 +508,7 @@ footer .logo {
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: transparent;
+  background-color: #e7e9fc;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0;
@@ -521,18 +521,25 @@ footer .logo {
 }
 .modal-button:hover,
 .modal-button:focus {
-  /* fill: var(--accent-color); */
   background-color: #404bbf;
   border: none;
 }
+.modal-button:hover .close,
+.modal-button:focus .close {
+  fill: #ffffff;
+}
+
 .modal-title {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
   text-align: center;
   color: var(--black);
 }
-field {
+
+.field {
   display: block;
   padding-right: 40px;
   padding-left: 40px;
