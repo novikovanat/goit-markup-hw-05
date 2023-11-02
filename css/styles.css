@@ -599,9 +599,9 @@ footer .logo {
   align-items: center;
   cursor: pointer;
 }
-/* .form {
-  gap: 24px;
-} */
+.form {
+  margin-bottom: 8px;
+}
 
 .icon-svg {
   position: absolute;
