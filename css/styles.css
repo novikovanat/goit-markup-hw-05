@@ -555,24 +555,32 @@ footer .logo {
   color: #8e8f99;
   margin-bottom: 4px;
 }
-.check-item {
+/* .check-item {
   display: block;
   text-align: center;
   vertical-align: center;
   padding-top: 20px;
   padding-bottom: 30px;
-}
+} */
 
-.field textarea {
+/* .field textarea {
   resize: none;
   margin-right: 0;
-  height: 120px;
+
   padding-top: 16px;
   padding-right: 12px;
   padding-bottom: 16px;
   padding-left: 12px;
-}
+} */
 
+textarea.input-item {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  padding: 8px 16px;
+  height: 120px;
+}
 .input-item:focus {
   outline: none;
   border: 1px solid var(--accent-color);
@@ -601,7 +609,13 @@ footer .logo {
 .form {
   margin-bottom: 8px;
 }
-
+.form:nth-child(4) {
+  /* background-color: red; */
+  margin-bottom: 16px;
+}
+.form:nth-child(5) {
+  margin-bottom: 24px;
+}
 .icon-svg {
   position: absolute;
   left: 16px;
