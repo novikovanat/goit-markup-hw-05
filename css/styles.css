@@ -588,12 +588,14 @@ textarea.input-item {
   padding: 8px 16px;
   height: 120px;
 }
-.input-item:focus {
+.input-item:focus,
+.input-item:hover {
   outline: none;
   border: 1px solid var(--accent-color);
   border-color: #4d5ae5;
 }
-.input-item:focus .icon-svg {
+.input-item:focus .icon-svg,
+.input-item:hover .icon-svg {
   fill: #4d5ae5;
 }
 /* .checkbox {
