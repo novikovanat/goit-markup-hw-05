@@ -185,6 +185,8 @@ p.navigation-menu {
 }
 
 .headline-button {
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   background-color: #4d5ae5;
   font-weight: 500;
@@ -196,7 +198,6 @@ p.navigation-menu {
   min-width: 169px;
   height: 56px;
   border: none;
-  background-color: #4d5ae5;
   border-radius: 4px;
   margin: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -588,12 +589,6 @@ footer .logo {
 }
 
 .order-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 4px;
-  border: none;
-  background-color: #4d5ae5;
   min-width: 165px;
   height: 40px;
   display: flex;
