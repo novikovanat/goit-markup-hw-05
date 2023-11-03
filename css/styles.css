@@ -76,7 +76,6 @@ body {
 .current-page::after {
   content: "";
   display: block;
-  border: solid;
   height: 4px;
   width: 100%;
   border-radius: 2px;
@@ -166,13 +165,13 @@ p.navigation-menu {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office-1.jpg);
+    url(../images/people-office-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 188px 0 188px;
   background-color: #2e2f42;
-  letter-spacing: 0.02em;
+  margin: 0 auto;
 }
 .headline {
   max-width: 496px;
