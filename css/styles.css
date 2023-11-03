@@ -600,7 +600,9 @@ footer .logo {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-top: 0;
 }
+
 .form {
   margin-bottom: 8px;
 }
