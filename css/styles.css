@@ -564,7 +564,7 @@ footer .logo {
 } */
 
 /* .field textarea {
-  resize: none;
+  
   margin-right: 0;
 
   padding-top: 16px;
@@ -574,6 +574,7 @@ footer .logo {
 } */
 
 textarea.input-item {
+  resize: none;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -589,12 +590,12 @@ textarea.input-item {
 .input-item:focus .icon-svg {
   fill: #4d5ae5;
 }
-.checkbox {
+/* .checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   position: absolute;
-}
+} */
 
 .order-button {
   min-width: 165px;
