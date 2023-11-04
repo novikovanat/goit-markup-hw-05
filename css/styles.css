@@ -578,6 +578,7 @@ footer .logo {
   padding-bottom: 16px;
   padding-left: 12px;
 } */
+
 input.visually-hidden:checked + .label-item .checkbox-span {
   background-color: #404bbf;
   border: none;
@@ -657,11 +658,7 @@ textarea.input-item {
 } */
 .checkbox-svg {
   fill: var(--white);
-  padding-top: 2px;
-  margin-right: 8px;
-  margin-bottom: -2px;
-  /* border-radius: 3px; */
-  /* border: 2px solid var(--black); */
+  margin: auto;
 }
 
 /* .checkbox:checked + .checkbox-svg {
