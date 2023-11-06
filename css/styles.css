@@ -55,21 +55,19 @@ body {
   align-items: baseline;
 }
 .display-flex {
-  display: flex;
-
   display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox; /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Chrome */
+  display: flex;
 }
 
 .menu {
-  display: flex;
-
   display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox; /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Chrome */
+  display: flex;
   gap: 40px;
 }
 
@@ -88,13 +86,12 @@ body {
   gap: 16px;
 }
 .display-flex-gap-ul {
-  display: flex;
-
   display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox; /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Chrome */
   justify-content: center;
+  display: flex;
   gap: 24px;
 }
 
@@ -409,8 +406,8 @@ footer .logo {
   background-color: #31d0aa;
 }
 .subscribe {
-  margin-left: 93px;
-  margin-top: 12px;
+  margin-left: auto;
+  /* margin-top: 12px; */
 }
 .email-subscribe {
   font-size: 12px;
@@ -450,18 +447,17 @@ footer .logo {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order-button:hover .sent-icon,
+/* .order-button:hover .sent-icon,
 .order-button:focus .sent-icon {
   fill: var(--accent-color);
-}
+} */
 
 .footer-media-title {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
-  margin: 0 0 16px 24px;
+  margin: 0 0 16px 0;
   color: var(--white);
 }
 /* .form {
@@ -501,12 +497,12 @@ footer .logo {
   right: 24px;
   width: 24px;
   height: 24px;
-  display: flex;
-  margin-left: 490px;
+  /* display: flex; */
+  /* margin-left: 490px; */
   border-radius: 50%;
   background-color: #e7e9fc;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -538,13 +534,13 @@ footer .logo {
   color: var(--black);
 }
 
-.field {
+/* .field {
   display: block;
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 12px;
   position: relative;
-}
+} */
 
 .label-item {
   display: block;
@@ -560,14 +556,6 @@ footer .logo {
 
 /* input:checked .checkbox-svg {
   fill: #f4f4fd; */
-
-/* .check-item {
-  display: block;
-  text-align: center;
-  vertical-align: center;
-  padding-top: 20px;
-  padding-bottom: 30px;
-} */
 
 /* .field textarea {
   
@@ -688,3 +676,9 @@ input.visually-hidden:checked .checkbox-svg {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* .display-flex-gap-ul .order-button:hover,
+.order-button:focus {
+  color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
