@@ -497,12 +497,12 @@ footer .logo {
   right: 24px;
   width: 24px;
   height: 24px;
-  /* display: flex; */
+  display: flex;
   /* margin-left: 490px; */
   border-radius: 50%;
   background-color: #e7e9fc;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
